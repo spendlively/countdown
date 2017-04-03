@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" class="ltr sitecd-ru js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths classlist" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Language" content="ru">
+		<script type="text/javascript" id="www-widgetapi-script" src="./1_files/www-widgetapi.js" async=""></script><script type="text/javascript" src="./1_files/samsung.min.js"></script>
+		<link rel="stylesheet" href="./1_files/index.css">
+		
+
+<title>Dont look</title>
+
+<script type="text/javascript" src="./1_files/underscore-min.js"></script>
+
+<script type="template/css" class="gradient-tmpl">
+    -moz-linear-gradient(top, rgba(62, 187, 251, 0) <%= top_wavefront %>%, rgba(62, 187, 251, 1) <%= top_waveback %>%, rgba(62, 187, 251, 0) 50%, rgba(62, 187, 251, 1) <%= bottom_waveback %>%, rgba(62, 187, 251, 0) <%= bottom_wavefront %>%)
+</script>
+<script type="template/css" class="gradient-tmpl">
+    -webkit-linear-gradient(top, rgba(62, 187, 251, 0) <%= top_wavefront %>%, rgba(62, 187, 251, 1) <%= top_waveback %>%, rgba(62, 187, 251, 0) 50%, rgba(62, 187, 251, 1) <%= bottom_waveback %>%, rgba(62, 187, 251, 0) <%= bottom_wavefront %>%)
+</script>
+<script type="template/css" class="gradient-tmpl">
+    linear-gradient(to bottom, rgba(62, 187, 251, 0) <%= top_wavefront %>%, rgba(62, 187, 251, 1) <%= top_waveback %>%, rgba(62, 187, 251, 0) 50%, rgba(62, 187, 251, 1) <%= bottom_waveback %>%, rgba(62, 187, 251, 0) <%= bottom_wavefront %>%)
+</script>
+<script type="template/css" id="_cliprect-tmpl">rect(<%= clip_top %>px,auto,<%= clip_bottom %>px,auto)</script>
+
+
+</head>
+<body class="ss_samsung cookiewarning cookie-warning hover" data-phase="teasing" style="" cz-shortcut-listen="true">
+<div id="TMAN_TOP_BODY"></div>
+	<div class="body_wrapper">	
+		<!-- header -->
+		<!-- //header -->
+
+		<div class="scrollwrapper scrollable vertical">
+		<!-- content -->
+		<div id="content" role="main">
+
+<!-- Contents -->
+
+<div id="site-wrap">
+
+    <section class="countdown phase-teasing">
+        <div class="c2a">
+            <h1>&nbsp;</h1>
+            <h1>Don't look at this site</h1>
+        </div>
+        <div class="countdown-frame phase-teasing">
+            <div>
+                <div class="countdown-block" style="transform: scale(1.01523);">
+                    <div class="group days">
+                        <span class="digit digit-0"></span>
+                        <span class="digit digit-0"></span>
+                        <span class="label">ДНЕЙ</span>
+                    </div>
+                    <div class="group hours">
+                        <span class="digit digit-0"></span>
+                        <span class="digit digit-4"></span>
+                        <span class="label">ЧАСА</span>
+                    </div>
+                    <div class="group mins">
+                        <span class="digit digit-1"></span>
+                        <span class="digit digit-1"></span>
+                        <span class="label">МИНУТ</span>
+                    </div>
+                    <div class="group secs">
+                        <span class="digit digit-2"></span>
+                        <span class="digit digit-7"></span>
+                        <span class="label">СЕКУНД</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c2a">
+            <!-- <h1>РСДУ 5.17.1.0</h1> -->
+            <!-- <h1>iSMS 1.17.1.0</h1> -->
+        </div>
+    </section>
+
+</div>
+
+<script type="text/javascript" src="./1_files/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    jQuery.noConflict();
+</script>
+
+<script type="text/javascript">
+
+String.prototype.zeroPad = function (len, c) {
+    var s = '';
+    c = c || '0';
+    len = (len || 2) - this.length;
+    while (s.length < len) s += c;
+    return s + this;
+};
+Number.prototype.zeroPad = function (len, c) { return String(this).zeroPad(len, c); };
+
+
+
+if (window.Float32Array == undefined) {
+    jQuery('.turntable').fadeIn();
+    turntable = $('.threesixty').threesixty({
+        loop: false,
+        fps: 100,
+        swipeSensitivity: 0.2,
+        swipeInverse: false,
+        loadingIndicatorURI: 'i/loading.gif',
+        indexPadding: 3
+    });
+    turntable.setupWithImgs('seq/S8_V5', 251, 'jpg').init(80).renderLoop();
+}
+
+var D = new Date(Date.parse("29 Mar 2017 15:00:00 GMT"));
+var NOW;
+
+var ReleaseDate = new Date(2017, 3, 30, 22, 0, 0);
+var CurrentDate = new Date();
+var secs2go = Math.floor((+ReleaseDate - CurrentDate)/1000);
+
+var msk_match = top.location.href.match(/\bmsk=(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})/);
+var msk = msk_match && new Date(msk_match[1] + '+03:00');
+
+//jQuery.ajax('timestamp?' + Math.round(Math.random()*1000000), {
+//    success: function (data, status, xhr) {
+//        NOW = (msk && new Date(msk)) || new Date(xhr.getResponseHeader('Date'));
+//        secs2go = Math.round((D.getTime() - NOW.getTime()) / 1000);
+//
+//        $('body').on('ScheduledLayout.phaseChange', function (e, phase) {
+//            if (phase == 'teasing') {
+//                if (window.Float32Array) {
+//                    $.ajax('js/three.min.js', {dataType: 'script', cache: true}).done(function () {
+//                        $.when(
+//                                        $.ajax('js/ColladaLoader.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/OrbitControls.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/postprocessing/EffectComposer.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/postprocessing/RenderPass.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/postprocessing/ShaderPass.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/postprocessing/MaskPass.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/shaders/CopyShader.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/shaders/AdditiveBlendShader.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/shaders/HorizontalBlurShader.js', { dataType: 'script', cache: true }),
+//                                        $.ajax('js/shaders/VerticalBlurShader.js', { dataType: 'script', cache: true })
+//                                ).fail(function () {
+//                                    console.log("*** Three.js loading fail: %o", arguments);
+//                                }).done(function () {
+//                                    $.ajax('js/dream-page.js', { dataType: 'script', cache: true })
+//                                });
+//                    });
+//                }
+//            } else if (phase == 'unpacklive') {
+//                ytPlayback(ytplayback_config.livestream_ytid, '.unpacklive .live-placeholder', 'cue');
+//            } else if (phase == 'over') {
+//                destroyPlayers();
+//                location.href = '/ru/promotions/galaxys8/preorder/';
+//            }
+//        });
+//        $('body').ScheduledLayout({
+//            now: NOW,
+//            liveUpdateInterval: 5000,
+//            config: {
+//                teasing: {
+//                    till: '2017-03-29T17:30:00+03:00'
+//                },
+//                unpacklive: {
+//                    since: '2017-03-29T17:30:00+03:00',
+//                    till: '2017-03-29T19:30:00+03:00'
+//                },
+//                over: {
+//                    since: '2017-03-29T19:30:00+03:00'
+//                }
+//            }
+//        });
+//
+//
+//    }
+//});
+
+
+var stop_couontdown = false;
+function updateDOM(secs2go) {
+
+    resize_handler();
+
+}
+
+Number.prototype.pluralForm = function (root, suffix_list) {
+    return root + (this >= 11 && this <= 14 ? suffix_list[0] : suffix_list[this % 10]);
+};
+
+Number.prototype.asDays = function () {
+    var d = Math.floor(this);
+    return d.pluralForm('Д', ['НЕЙ', 'ЕНЬ', 'НЯ', 'НЯ', 'НЯ', 'НЕЙ', 'НЕЙ', 'НЕЙ', 'НЕЙ', 'НЕЙ']);
+};
+Number.prototype.asHours = function () {
+    var d = Math.floor(this);
+    return d.pluralForm('ЧАС', ['ОВ', '', 'А', 'А', 'А', 'ОВ', 'ОВ', 'ОВ', 'ОВ', 'ОВ']);
+};
+Number.prototype.asMinutes = function () {
+    var d = Math.floor(this);
+    return d.pluralForm('МИНУТ', ['', 'А', 'Ы', 'Ы', 'Ы', '', '', '', '', '']);
+};
+Number.prototype.asSeconds = function () {
+    var d = Math.floor(this);
+    return d.pluralForm('СЕКУНД', ['', 'А', 'Ы', 'Ы', 'Ы', '', '', '', '', '']);
+};
+
+
+
+function updateCountdown(secs2go) {
+
+//    if (NOW == undefined) return;
+
+    updateDOM(secs2go);
+
+    if (!stop_couontdown) {
+        var m;
+        m = 24 * 3600;
+        var days2go = Math.floor(secs2go / m).zeroPad(2);
+        secs2go = secs2go % m;
+        updateUnitGroup('.group.days', days2go);
+        $('.group.days .label').text(Number(days2go).asDays());
+
+        m = 3600;
+        var hours2go = Math.floor(secs2go / m).zeroPad(2);
+        secs2go = secs2go % m;
+        updateUnitGroup('.group.hours', hours2go);
+        $('.group.hours .label').text(Number(hours2go).asHours());
+
+        m = 60;
+        var mins2go = Math.floor(secs2go / m).zeroPad(2);
+        secs2go = secs2go % m;
+        updateUnitGroup('.group.mins', mins2go);
+        $('.group.mins .label').text(Number(mins2go).asMinutes());
+
+        secs2go = secs2go.zeroPad(2);
+        updateUnitGroup('.group.secs', secs2go);
+        $('.group.secs .label').text(Number(secs2go).asSeconds());
+    }
+
+}
+
+function updateUnitGroup(sel, value) {
+    var $group = jQuery(sel);
+    var $digits = $group.find('.digit');
+    flip2digit($digits.eq(0), value[0]);
+    flip2digit($digits.eq(1), value[1]);
+}
+
+function tick() {
+    updateCountdown(--secs2go);
+}
+
+var templates = jQuery('.gradient-tmpl').map(function (idx, el) {
+    return _.template(el.innerHTML.replace(/^\s+/m,'').replace(/\s+$/m,''));
+});
+var clip_template = _.template(jQuery('#_cliprect-tmpl').html());
+
+function flip2digit(el, digit) {
+
+    duration = 400;
+    var $el = jQuery(el);
+
+    if ($el.hasClass('digit-' + digit)) return;
+
+    var DIGIT_H = 164;
+    var DIGIT_H_2 = DIGIT_H / 2;
+
+    var $new_digit = jQuery('<span class="new-digit digit-' + digit + '"></span>');
+    var $hilite = jQuery('<span class="advance-hilite"></span>');
+    $el.append($new_digit, $hilite);
+
+    jQuery({progress: 0.0}).animate({progress: 1.0}, {
+        duration: duration,
+//            easing: 'easeInOutCubic',
+//            easing: 'easeInOutCirc',
+        progress: function (fx, now) {
+            _(templates).each(function (tplc) {
+                var wave_shift = 2.0 + (49 - 2.0) * now;
+                var opacity_shift = 1 - now;
+                var bg_value = tplc({
+                    top_wavefront: 50 - wave_shift,
+                    top_waveback: (50 - wave_shift) + 1,
+                    bottom_wavefront: 50 + wave_shift,
+                    bottom_waveback: (50 + wave_shift) - 1
+                });
+                $hilite.css({
+                    background: bg_value,
+                    opacity: opacity_shift
+                });
+
+                $new_digit.css({
+                    clip: clip_template({
+                        clip_top: DIGIT_H_2 * (1 - now),
+                        clip_bottom: DIGIT_H_2 * (1 + now)
+                    })
+                });
+            });
+        },
+        complete: function () {
+            $hilite.remove();
+            $new_digit.remove();
+            $el.removeClass('digit-0 digit-1 digit-2 digit-3 digit-4 digit-5 digit-6 digit-7 digit-8 digit-9 digit-x').addClass('digit-' + digit);
+        }
+    });
+
+}
+
+
+function resize_handler() {
+    var $b = jQuery('.countdown-block');
+    var scale = $b.parent().width() / $b.width();
+    $b.css({ transform: 'scale(' + scale + ')' });
+}
+resize_handler();
+
+setTimeout(function () {
+    updateCountdown(secs2go);
+    ticker = setInterval(tick, 1000);
+}, 500);
+
+jQuery(window).bind('resize orientationchange', resize_handler);
+
+//======================================================================================================================
+
+$('#_s8_unpack_prereg').submit(function (e) {
+    e.preventDefault();
+
+    $('form-field, .form-field').removeClass('bad');
+    var input_ok = true;
+
+    var $input = $('input[name=Email]');
+    val = $input.val();
+    if (!val.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+        $input.closest('form-field,.form-field,.checkbox').addClass('bad');
+        input_ok = false;
+    }
+    $input = $('input[name=agree]');
+    if (!$input.is(':checked')) {
+        $input.closest('form-field,.form-field').addClass('bad');
+        input_ok = false;
+    }
+
+    if (input_ok) {
+        var comment_lookingFor = '';
+        $('#_s8_unpack_prereg button').attr('disabled', 'disbaled');
+
+        var form_data = {
+            CampaignCode: "GS8T2",
+            Email: $('input[name=Email]').val(),
+            SenderFormName : "S8TeaserForm2",
+//                SubscribeEmail: $('input[name=SubscribeEmail]').prop("checked"),
+            Field1: $('input[name=dream-options]:checked').val(),
+            Cid: "s8dream_unpack_prereg"
+        };
+        dream_subscribe('https://ssl.samsung.ru/localCMS/registrator/RegistrateForm', form_data, dream_thanks);
+    }
+
+    return false;
+});
+
+function dream_subscribe(service_url, form_data, callback) {
+    var x = new Date();
+    form_data.TimeOffset = -x.getTimezoneOffset() / 60;
+
+    $.post(service_url, form_data, function (data) {
+        callback(data);
+    }).fail(function (data) {
+        window.console && console.log("error: %o", data);
+        alert('Ошибка при отправке данных.\nПожалуйста, попробуйте повторить позже.');
+    });
+
+
+}
+
+function dream_thanks(service_response) {
+    if (service_response['Result'] == 'OK') {
+        $('section.quiz').slideUp();
+        $('section.thanks').slideDown();
+        try {
+            var event_name = 'submit';
+            window.console && console['log'] && console.log('event: %o', event_name);
+            var s=s_gi('sssamsung4ru,sssamsung4mstglobal');
+            s.linkTrackVars='eVar33,events';
+            s.linkTrackEvents='event45';
+            s.eVar33='ru:s8dreamteaser:main:' + event_name;
+            s.events='event45';
+            s.tl(this,'o',' ru:s8dreamteaser:main:' + event_name);
+        } catch(ex) {
+            console.log('*** %o', ex);
+        }
+    } else {
+        alert('Ошибка при отправке данных.\nПожалуйста, попробуйте повторить позже.');
+    }
+}
+
+$('.scroll-hint').click(function (e) {
+    $('html,body').stop().scrollTo($('section.quiz'), 500);
+});
+
+$('.rotate-hint').mouseenter(function () {
+    $(this).fadeOut(function () {
+        $(this).remove();
+    });
+});
+
+
+</script>
+
+</div>
+
+
+</div></div></body></html>
+
+
